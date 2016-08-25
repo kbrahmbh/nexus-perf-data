@@ -31,6 +31,23 @@
             <type>group</type>
             <members>maven01-hosted,maven01-proxy</members>
         </configurator>
+        <configurator>
+            <class>com.sonatype.nexus.perftest.config.Pull</class>
+            <repo>maven01-proxy</repo>
+            <paths>
+                <class>com.sonatype.nexus.perftest.paths.CsvLogParser</class>
+                <logfile>data/maven-3.3.4-build-artifact-access.csv.gz</logfile>
+            </paths>
+        </configurator>
+        <configurator>
+            <class>com.sonatype.nexus.perftest.config.Pull</class>
+            <repo>maven01-proxy</repo>
+            <paths>
+                <class>com.sonatype.nexus.perftest.paths.HttpdLogParser</class>
+                <logfile>data/maven-3.1.0-build-artifact-access.log.gz</logfile>
+                <prefix>/content/groups/public/</prefix>
+            </paths>
+        </configurator>
     </configurators>
     <swarms>
         <swarm>
