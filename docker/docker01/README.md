@@ -5,9 +5,9 @@ Simple "consuming" scenario, only pulls various (hello-world, centos, takari-oss
 Duration: 15 minutes
 
 Swarms:
-* Consume Apache Maven 3.3.4 dependencies
+* Consume Docker images
   * Clients: 120
   * Rate: 5/s
-* Consume Apache Maven 3.1.0 dependencies
+* Consume Docker images
   * Clients: 120
   * Rate: 5/s
