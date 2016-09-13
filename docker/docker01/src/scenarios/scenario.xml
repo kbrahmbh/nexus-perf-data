@@ -37,7 +37,6 @@
             <name>docker01-1</name>
             <numberOfClients>120</numberOfClients>
             <rate>5/SECOND</rate>
-            <preemptiveAuth>true</preemptiveAuth>
             <operation>
                 <class>com.sonatype.nexus.perftest.operation.DownloadOperation</class>
                 <path-prefix>repository/docker01-all</path-prefix>
@@ -52,7 +51,6 @@
             <name>docker01-2</name>
             <numberOfClients>120</numberOfClients>
             <rate>5/SECOND</rate>
-            <preemptiveAuth>true</preemptiveAuth>
             <operation>
                 <class>com.sonatype.nexus.perftest.operation.DownloadOperation</class>
                 <path-prefix>repository/docker01-all</path-prefix>
